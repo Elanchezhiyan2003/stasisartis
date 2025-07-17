@@ -298,7 +298,7 @@ export default function HomePage() {
                 {/* Main image */}
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-500">
                   <Image
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=500&fit=crop"
+                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&auto=format&fit=crop&q=60"
                     alt="Students collaborating on creative technology projects"
                     width={600}
                     height={500}

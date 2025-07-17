@@ -8,6 +8,9 @@ import Link from "next/link"
 import Footer from "@/components/footer"
 import { ArrowLeft, Send, Mail, Phone, MapPin, CheckCircle, AlertCircle } from "lucide-react"
 
+// Inject the Web3Forms access key at build time
+const WEB3FORMS_ACCESS_KEY = "61dfb368-33a8-493d-be9c-1541714683ef";
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
@@ -55,8 +58,17 @@ export default function ContactPage() {
 
     const data = {
       ...formData,
-            access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
+      access_key: WEB3FORMS_ACCESS_KEY,
     };
+
+    // Debug: log the payload
+    console.log("Submitting to Web3Forms:", data);
+    if (!data.access_key) {
+      setSubmitStatus("error");
+      alert("Web3Forms access key is missing. Please check your environment variables.");
+      setIsSubmitting(false);
+      return;
+    }
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -84,10 +96,12 @@ export default function ContactPage() {
       } else {
         console.error("Error from Web3Forms:", result);
         setSubmitStatus("error");
+        alert("Web3Forms error: " + (result.message || JSON.stringify(result)));
       }
     } catch (error) {
       console.error("Error submitting form:", error)
       setSubmitStatus("error")
+      alert("Network or server error submitting to Web3Forms.");
     } finally {
       setIsSubmitting(false)
     }
