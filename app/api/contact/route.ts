@@ -1,3 +1,4 @@
+// @ts-ignore
 import { type NextRequest, NextResponse } from "next/server"
 
 // This is a mock database - in production, you'd use a real database
