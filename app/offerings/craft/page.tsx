@@ -13,7 +13,7 @@ export default function CraftPage() {
       duration: "Available Now",
       level: "Beginner",
       price: "Coming Soon",
-      image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=300&h=200&fit=crop",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752747968/wmremove-transformed_1_flqhm0.png",
       features: ["Decor", "Preservation", " Keepsakes & accessories"],
       comingSoon: true,
     },
@@ -37,7 +37,7 @@ export default function CraftPage() {
       duration: " By Commission",
       level: "All Levels",
       price: "Coming Soon",
-      image: "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=300&h=200&fit=crop",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752748584/pxbee_eraser_2025-07-17_16-06-03_b0sfva.png",
       features: [" Spatial storytelling", "Resin & design"],
       comingSoon: true,
     },
@@ -116,7 +116,7 @@ export default function CraftPage() {
             </div>
             <div className="relative">
               <Image
-                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=500&fit=crop"
+                src="https://res.cloudinary.com/duoa4uzr3/image/upload/v1752748705/view-diy-hand-painted-t-shirt_s1revo.jpg"
                 alt="Resin art materials and colorful creations"
                 width={600}
                 height={500}
