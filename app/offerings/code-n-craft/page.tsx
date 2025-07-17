@@ -5,54 +5,54 @@ import Footer from "@/components/footer"
 
 export default function CodeNCraftPage() {
   const workshops = [
-    {
-      // title: "🖼 MoodSync Frames",
-      title: "MoodSync Frames",
-      // duration: "6 weeks",
-      // duration: "🧠 Inner Reflection",
-      duration: "Inner Reflection",
-      level: "Intermediate",
-      // price: "Coming Soon",
-      image: "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=300&h=200&fit=crop",
-      features: ["Resin frames", " Reflect your inner state"],
-      comingSoon: true,
-    },
-    {
-      // title: "✨ AuraCast Sculptures" ,
-      title: "AuraCast Sculptures" ,
-      // duration: "8 weeks",
-      // duration: "🌟 Light + Resin",
-      duration: "Light + Resin",
-      level: "Advanced",
-      // price: "Coming Soon",
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=300&h=200&fit=crop",
-      features: ["Your energy"," Cast in light and resin"],
-      comingSoon: true,
-    },
-    {
-      // title: "🌀 TouchReactive Tokens",
-      title: "TouchReactive Tokens",
-      // duration: "4 weeks",
-      // duration: "💫 Interactive Keepsakes",
-      duration: "Interactive Keepsakes",
-      level: "Beginner",
-      // price: "Coming Soon",
-      image: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=300&h=200&fit=crop",
-      features: [" Tiny resin keepsakes"," Respond to your touch"],
-      comingSoon: true,
-    },
-    {
-      // title: "🧠 Embedded Installations",
-      title: "Embedded Installations",
-      // duration: "4 weeks",
-      // duration: "🔌 Tech Meets Art",
-      duration: " Tech Meets Art",
-      level: "Beginner",
-      // price: "Coming Soon",
-      image: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=300&h=200&fit=crop",
-      features: ["Large-scale resin artworks"," Integrated with microcontrollers and sensors"],
-      comingSoon: true,
-    },
+    // {
+    //   // title: "🖼 MoodSync Frames",
+    //   title: "MoodSync Frames",
+    //   // duration: "6 weeks",
+    //   // duration: "🧠 Inner Reflection",
+    //   duration: "Inner Reflection",
+    //   level: "Intermediate",
+    //   // price: "Coming Soon",
+    //   image: "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=300&h=200&fit=crop",
+    //   features: ["Resin frames", " Reflect your inner state"],
+    //   comingSoon: true,
+    // },
+    // {
+    //   // title: "✨ AuraCast Sculptures" ,
+    //   title: "AuraCast Sculptures" ,
+    //   // duration: "8 weeks",
+    //   // duration: "🌟 Light + Resin",
+    //   duration: "Light + Resin",
+    //   level: "Advanced",
+    //   // price: "Coming Soon",
+    //   image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=300&h=200&fit=crop",
+    //   features: ["Your energy"," Cast in light and resin"],
+    //   comingSoon: true,
+    // },
+    // {
+    //   // title: "🌀 TouchReactive Tokens",
+    //   title: "TouchReactive Tokens",
+    //   // duration: "4 weeks",
+    //   // duration: "💫 Interactive Keepsakes",
+    //   duration: "Interactive Keepsakes",
+    //   level: "Beginner",
+    //   // price: "Coming Soon",
+    //   image: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=300&h=200&fit=crop",
+    //   features: [" Tiny resin keepsakes"," Respond to your touch"],
+    //   comingSoon: true,
+    // },
+    // {
+    //   // title: "🧠 Embedded Installations",
+    //   title: "Embedded Installations",
+    //   // duration: "4 weeks",
+    //   // duration: "🔌 Tech Meets Art",
+    //   duration: " Tech Meets Art",
+    //   level: "Beginner",
+    //   // price: "Coming Soon",
+    //   image: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=300&h=200&fit=crop",
+    //   features: ["Large-scale resin artworks"," Integrated with microcontrollers and sensors"],
+    //   comingSoon: true,
+    // },
   ]
 
   return (
@@ -124,7 +124,7 @@ export default function CodeNCraftPage() {
             </div>
             <div className="relative">
               <Image
-                src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=500&fit=crop"
+                src="https://res.cloudinary.com/duoa4uzr3/image/upload/v1752789734/1670203317786_fxbbyf.jpg"
                 alt="Digital art creation with technology tools"
                 width={600}
                 height={500}
@@ -143,10 +143,11 @@ export default function CodeNCraftPage() {
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Explore our innovative workshops that combine the best of both worlds
             </p>
+            <h2 className="text-6xl font-bold text-red-400 mb-4 font-display m-20">Comming Soon</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {workshops.map((workshop, index) => (
+            {/* {workshops.map((workshop, index) => (
               <div
                 key={index}
                 className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border"
@@ -165,12 +166,12 @@ export default function CodeNCraftPage() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-2 font-display">{workshop.title}</h3>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-gray-600 flex items-center">
+                    <span className="text-gray-600 flex items-center"> */}
                       {/* <Clock className="h-4 w-4 mr-1" /> */}
-                      {workshop.duration}
-                    </span>
+                      {/* {workshop.duration}
+                    </span> */}
                     {/* <span className="text-2xl font-bold text-green-600">{workshop.price}</span> */}
-                  </div>
+                  {/* </div>
                   <ul className="space-y-2 mb-6">
                     {workshop.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center text-gray-600">
@@ -182,13 +183,14 @@ export default function CodeNCraftPage() {
                   <Link
                     href="/contact"
                     className="w-full bg-green-600 text-white py-3 px-4 rounded-lg hover:bg-green-700 transition-colors font-semibold text-center block"
-                  >
+                  > */}
                     {/* Join Workshop */}
-                    Comming Soon
+                    {/* Comming Soon
                   </Link>
                 </div>
               </div>
-            ))}
+            ))} */}
+           
           </div>
         </div>
       </section>

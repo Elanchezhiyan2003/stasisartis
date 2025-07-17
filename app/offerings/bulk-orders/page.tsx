@@ -23,15 +23,15 @@ export default function BulkOrdersPage() {
       features: ["Custom Designs", "Brand Integration", "Quality Materials", "Bulk Discounts"],
       comingSoon: true,
     },
-    // {
-    //   title: "Corporate Branding Solutions",
-    //   category: "Business",
-    //   minOrder: "100 units",
-    //   price: "Coming Soon",
-    //   image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300&h=200&fit=crop",
-    //   features: ["Logo Integration", "Custom Colors", "Professional Finish", "Fast Delivery"],
-    //   comingSoon: true,
-    // },
+    {
+      title: "Corporate Branding Solutions",
+      category: "Business",
+      minOrder: "100 units",
+      price: "Coming Soon",
+      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300&h=200&fit=crop",
+      features: ["Logo Integration", "Custom Colors", "Professional Finish", "Fast Delivery"],
+      comingSoon: true,
+    },
   ]
 
   return (
@@ -104,7 +104,7 @@ export default function BulkOrdersPage() {
             </div>
             <div className="relative">
               <Image
-                src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=500&fit=crop"
+                src="https://res.cloudinary.com/duoa4uzr3/image/upload/v1752790253/360_F_649024170_ERgaoJ3pxE18gG3bPGQkVnoa2gEiGRIH_zmindu.jpg"
                 alt="Bulk packaging and shipping boxes"
                 width={600}
                 height={500}

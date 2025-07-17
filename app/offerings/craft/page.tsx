@@ -2,8 +2,10 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft, Palette, Sparkles, Users, Clock, CheckCircle } from "lucide-react"
 import Footer from "@/components/footer"
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
 
 export default function CraftPage() {
+  
   const workshops = [
     {
       // title: "🖌️ Signature Resin Products",
@@ -27,6 +29,90 @@ export default function CraftPage() {
       price: "Coming Soon",
       image: "https://images.unsplash.com/photo-1609205807107-e8ec2120f9de?w=300&h=200&fit=crop",
       features: [" Branding", " Awards", " Souvenirs with soul"],
+      comingSoon: true,
+    },
+    {
+      // title: "🧩 Art Installations",
+      title: " Art Installations",
+      // duration: "8 weeks",
+      // duration: "🖼️ By Commission",
+      duration: " By Commission",
+      level: "All Levels",
+      price: "Coming Soon",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752748584/pxbee_eraser_2025-07-17_16-06-03_b0sfva.png",
+      features: [" Spatial storytelling", "Resin & design"],
+      comingSoon: true,
+    },
+    {
+      // title: "🧩 Art Installations",
+      title: " Art Installations",
+      // duration: "8 weeks",
+      // duration: "🖼️ By Commission",
+      duration: " By Commission",
+      level: "All Levels",
+      price: "Coming Soon",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752748584/pxbee_eraser_2025-07-17_16-06-03_b0sfva.png",
+      features: [" Spatial storytelling", "Resin & design"],
+      comingSoon: true,
+    },
+    {
+      // title: "🧩 Art Installations",
+      title: " Art Installations",
+      // duration: "8 weeks",
+      // duration: "🖼️ By Commission",
+      duration: " By Commission",
+      level: "All Levels",
+      price: "Coming Soon",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752748584/pxbee_eraser_2025-07-17_16-06-03_b0sfva.png",
+      features: [" Spatial storytelling", "Resin & design"],
+      comingSoon: true,
+    },
+    {
+      // title: "🧩 Art Installations",
+      title: " Art Installations",
+      // duration: "8 weeks",
+      // duration: "🖼️ By Commission",
+      duration: " By Commission",
+      level: "All Levels",
+      price: "Coming Soon",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752748584/pxbee_eraser_2025-07-17_16-06-03_b0sfva.png",
+      features: [" Spatial storytelling", "Resin & design"],
+      comingSoon: true,
+    },
+    {
+      // title: "🧩 Art Installations",
+      title: " Art Installations",
+      // duration: "8 weeks",
+      // duration: "🖼️ By Commission",
+      duration: " By Commission",
+      level: "All Levels",
+      price: "Coming Soon",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752748584/pxbee_eraser_2025-07-17_16-06-03_b0sfva.png",
+      features: [" Spatial storytelling", "Resin & design"],
+      comingSoon: true,
+    },
+    {
+      // title: "🧩 Art Installations",
+      title: " Art Installations",
+      // duration: "8 weeks",
+      // duration: "🖼️ By Commission",
+      duration: " By Commission",
+      level: "All Levels",
+      price: "Coming Soon",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752748584/pxbee_eraser_2025-07-17_16-06-03_b0sfva.png",
+      features: [" Spatial storytelling", "Resin & design"],
+      comingSoon: true,
+    },
+    {
+      // title: "🧩 Art Installations",
+      title: " Art Installations",
+      // duration: "8 weeks",
+      // duration: "🖼️ By Commission",
+      duration: " By Commission",
+      level: "All Levels",
+      price: "Coming Soon",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752748584/pxbee_eraser_2025-07-17_16-06-03_b0sfva.png",
+      features: [" Spatial storytelling", "Resin & design"],
       comingSoon: true,
     },
     {
@@ -116,7 +202,7 @@ export default function CraftPage() {
             </div>
             <div className="relative">
               <Image
-                src="https://res.cloudinary.com/duoa4uzr3/image/upload/v1752748705/view-diy-hand-painted-t-shirt_s1revo.jpg"
+                src="https://res.cloudinary.com/duoa4uzr3/image/upload/v1752789500/WhatsApp_Image_2025-07-18_at_01.25.00_124a6e0a_cniph5.jpg"
                 alt="Resin art materials and colorful creations"
                 width={600}
                 height={500}
@@ -138,55 +224,65 @@ export default function CraftPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {workshops.map((workshop, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border"
-              >
-                <div className="relative h-48">
-                  <Image
-                    src={workshop.image || "/placeholder.svg"}
-                    alt={workshop.title}
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold text-purple-600">
-                    {workshop.level}
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{workshop.title}</h3>
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-gray-600 flex items-center">
-                      {/* <Clock className="h-4 w-4 mr-1" /> */}
-                      {workshop.duration}
-                    </span>
-                    <span className="text-2xl font-bold text-purple-600">{workshop.price}</span>
-                  </div>
-                  <ul className="space-y-2 mb-6">
-                    {workshop.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-gray-600">
-                        <CheckCircle className="h-4 w-4 mr-2 text-green-500" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  {workshop.comingSoon ? (
-                    <div className="w-full bg-gray-400 text-white py-3 px-4 rounded-lg font-semibold text-center cursor-not-allowed">
-                      Coming Soon
-                    </div>
-                  ) : (
-                    <Link
-                      href="/contact"
-                      className="w-full bg-brand-orange-600 text-white py-3 px-4 rounded-lg hover:bg-brand-orange-700 transition-colors font-semibold text-center block"
+          <div className="relative">
+            <Carousel className="w-full">
+              <CarouselContent>
+                {workshops.map((workshop, index) => (
+                  <CarouselItem
+                    key={index}
+                    className="px-2 md:px-4 lg:px-6 basis-full sm:basis-1/2 lg:basis-1/3"
+                  >
+                    <div
+                      className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border"
                     >
-                      Join Workshop
-                    </Link>
-                  )}
-                </div>
-              </div>
-            ))}
+                      <div className="relative h-48">
+                        <Image
+                          src={workshop.image || "/placeholder.svg"}
+                          alt={workshop.title}
+                          fill
+                          className="object-cover"
+                        />
+                        <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold text-purple-600">
+                          {workshop.level}
+                        </div>
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-xl font-bold text-gray-900 mb-2">{workshop.title}</h3>
+                        <div className="flex items-center justify-between mb-4">
+                          <span className="text-gray-600 flex items-center">
+                            {/* <Clock className="h-4 w-4 mr-1" /> */}
+                            {workshop.duration}
+                          </span>
+                          <span className="text-2xl font-bold text-purple-600">{workshop.price}</span>
+                        </div>
+                        <ul className="space-y-2 mb-6">
+                          {workshop.features.map((feature, idx) => (
+                            <li key={idx} className="flex items-center text-gray-600">
+                              <CheckCircle className="h-4 w-4 mr-2 text-green-500" />
+                              {feature}
+                            </li>
+                          ))}
+                        </ul>
+                        {workshop.comingSoon ? (
+                          <div className="w-full bg-gray-400 text-white py-3 px-4 rounded-lg font-semibold text-center cursor-not-allowed">
+                            Coming Soon
+                          </div>
+                        ) : (
+                          <Link
+                            href="/contact"
+                            className="w-full bg-brand-orange-600 text-white py-3 px-4 rounded-lg hover:bg-brand-orange-700 transition-colors font-semibold text-center block"
+                          >
+                            Join Workshop
+                          </Link>
+                        )}
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="-left-6 md:-left-10" />
+              <CarouselNext className="-right-6 md:-right-10" />
+            </Carousel>
           </div>
         </div>
       </section>
@@ -226,7 +322,7 @@ export default function CraftPage() {
       </section>
 
       {/* Footer */}
-      <Footer />
+      <Footer/>
     </div>
   )
 }

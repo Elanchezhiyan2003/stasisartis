@@ -35,16 +35,16 @@ export default function CodePage() {
       features: ["AI prompt engineering (text/image)" , " No-code to low-code prototyping tools", "Generative workflows with ChatGPT, Midjourney", " Build & test AI-enhanced interactive concepts"],
       comingSoon: true,
     },
-    {
-      // title: "🧩 FlowBox Modules",
-      title: "FlowBox Modules",
-      duration: " 6 weeks",
-      level: "Beginner",
-      // price: "Coming Soon",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=200&fit=crop",
-      features: ["Intro to sensors & creative coding", " Interactive installation design", "Light, motion & sound-based triggers", " Final project: Build your own art-tech module"],
-      comingSoon: true,
-    },
+    // {
+    //   // title: "🧩 FlowBox Modules",
+    //   title: "FlowBox Modules",
+    //   duration: " 6 weeks",
+    //   level: "Beginner",
+    //   // price: "Coming Soon",
+    //   image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752763276/technology-integrated-everyday-life_vn11n5.jpg",
+    //   features: ["Intro to sensors & creative coding", " Interactive installation design", "Light, motion & sound-based triggers", " Final project: Build your own art-tech module"],
+    //   comingSoon: true,
+    // },
   ]
 
   return (
@@ -139,7 +139,7 @@ export default function CodePage() {
             <div className="relative animate-fade-in-right">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-2xl transform rotate-3"></div>
               <Image
-                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=500&fit=crop"
+                src="https://res.cloudinary.com/duoa4uzr3/image/upload/v1752786301/WhatsApp_Image_2025-07-18_at_02.33.28_1bc8218a_dnnko6.jpg"
                 alt="Coding workspace with multiple monitors"
                 width={600}
                 height={500}

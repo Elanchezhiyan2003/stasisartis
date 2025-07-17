@@ -25,51 +25,51 @@ export default function HomePage() {
   const offerings = [
     {
       title: "Code",
-      description: "Courses, DesignOps, Art+Earn 101",
+      description: "Emmebedded 101, DesignOps..",
       icon: Code,
       color: "bg-brand-teal-500",
       slug: "code",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752786301/WhatsApp_Image_2025-07-18_at_02.33.28_1bc8218a_dnnko6.jpg",
     },
     {
       title: "Craft",
-      description: "Resin, Products, Resin 101",
+      description: "Art installation, MIY Kits...",
       icon: Palette,
       color: "bg-brand-cyan-500",
       slug: "craft",
-      image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752789500/WhatsApp_Image_2025-07-18_at_01.25.00_124a6e0a_cniph5.jpg",
     },
     {
       title: "Code-n-Craft",
-      description: "Fusion Workshops",
+      description: "Fusion Products...",
       icon: Users,
       color: "bg-brand-teal-600",
       slug: "code-n-craft",
-      image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=400&h=300&fit=crop",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752789734/1670203317786_fxbbyf.jpg",
     },
     {
       title: "Internships",
-      description: "Createch Capsule",
+      description: "Createch Internship, Studio Apprentaion...",
       icon: GraduationCap,
       color: "bg-brand-emerald-600",
       slug: "internships",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752789960/people_on_laptops_rcmav2.jpg",
     },
     {
       title: "Programs",
-      description: "Schools, Bootcamps",
+      description: "Workshops, Bootcamps...",
       icon: Building,
       color: "bg-brand-teal-700",
       slug: "programs",
-      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&h=300&fit=crop",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752790035/1686663582907_cg2ntd.jpg",
     },
     {
       title: "Bulk Orders",
-      description: "MIY Kits, Decor, Branding",
+      description: "Corporate Orders, MIY Kits...",
       icon: Package,
       color: "bg-brand-cyan-700",
       slug: "bulk-orders",
-      image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752790253/360_F_649024170_ERgaoJ3pxE18gG3bPGQkVnoa2gEiGRIH_zmindu.jpg",
     },
   ]
 
@@ -78,23 +78,23 @@ export default function HomePage() {
       icon: Target,
       title: "Our Mission",
       description:
-        "To bridge the gap between technology and creativity, empowering individuals to become innovative creators in the digital age.",
+        "We aim to bridge the worlds of art and technology — empowering individuals to explore, experiment, and express themselves through personalized, tech-infused creations.",
       gradient: "from-brand-teal-500 to-brand-cyan-500",
     },
     {
       icon: Eye,
       title: "Our Vision",
       description:
-        "A world where every creator has the tools and knowledge to transform their ideas into reality through the perfect fusion of code and craft.",
+        " We envision a global createch movement where the next generation of artists, makers, and technologists redefine what’s possible — shaping a future where every creation is both functional and deeply personal.",
       gradient: "from-brand-cyan-500 to-brand-emerald-500",
     },
-    {
-      icon: Heart,
-      title: "Our Values",
-      description:
-        "Innovation, creativity, inclusivity, and hands-on learning. We believe in nurturing talent and fostering a community of passionate creators.",
-      gradient: "from-brand-emerald-500 to-brand-teal-500",
-    },
+    // {
+    //   icon: Heart,
+    //   title: "Our Values",
+    //   description:
+    //     "Innovation, creativity, inclusivity, and hands-on learning. We believe in nurturing talent and fostering a community of passionate creators.",
+    //   gradient: "from-brand-emerald-500 to-brand-teal-500",
+    // },
   ]
 
   return (
@@ -107,7 +107,8 @@ export default function HomePage() {
       <div className="absolute bottom-20 right-4 sm:right-10 w-20 h-20 sm:w-28 sm:h-28 bg-brand-teal-300 rounded-full opacity-20 animate-particle-float"></div>
 
       {/* Header */}
-      <header className="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+      {/* <header className="bg-white/95 backdrop-blur-md shadow-sm fixed mx-auto top-0 z-50 border-b border-gray-100 bg-opacity-10"> */}
+      <header className="bg-transparent backdrop-blur-md shadow-sm fixed top-0 w-full z-50 border-b ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4 sm:py-5">
             <Link
@@ -116,21 +117,23 @@ export default function HomePage() {
             >
               <div className="relative">
                 <Image
-                  src="/stasis-logo.png"
+                  // src="/stasis-logo.png"
+                  src="/sa.jpg"
                   alt="Stasis Artis Logo"
-                  width={45}
-                  height={45}
-                  className="sm:w-[55px] sm:h-[55px] rounded-xl group-hover:scale-105 transition-transform duration-300"
+                  width={50}
+                  height={50}
+                  className="sm:w-[60px] sm:h-[60px] rounded-full  group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-brand-teal-600/20 to-brand-cyan-600/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div>
-                <h1 className="text-xl sm:text-2xl font-display font-bold text-gray-900 group-hover:text-brand-teal-600 transition-colors duration-300">
+                <h1 className="text-xl sm:text-2xl font-display  font-bold text-gray-900 group-hover:text-brand-teal-600 transition-colors duration-300">
                   Stasis Artis
                 </h1>
-                <p className="text-xs sm:text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
-                  Createch Company
-                </p>
+                <p className="text-xs sm:text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300 font-serif tracking-tight">
+  Code ∩ Craft
+</p>
+
               </div>
             </Link>
 
@@ -236,33 +239,33 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Content Left */}
             <div className="animate-fade-in-left">
-              <div className="mb-6">
-                <div className="inline-flex items-center px-4 py-2 bg-brand-teal-100 text-brand-teal-700 rounded-full text-sm font-medium mb-6 animate-bounce-gentle">
+              <div className="mb-14">
+                {/* <div className="inline-flex items-center px-4 py-2 bg-brand-teal-100 text-brand-teal-700 rounded-full text-sm font-medium mb-6 animate-bounce-gentle">
                   <span className="w-2 h-2 bg-brand-teal-500 rounded-full mr-2 animate-pulse"></span>
                   Welcome to the Future of Learning
-                </div>
+                </div> */}
               </div>
 
-              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-gray-900 mb-6 sm:mb-8 leading-tight">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-gray-900 mb-6  sm:mb-8 leading-tight">
                 <span className="gradient-text animate-gradient-shift">Where Code</span>
                 <br />
                 <span className="text-gray-900">Meets Craft</span>
               </h2>
 
-              <p className="text-lg sm:text-xl text-gray-600 mb-8 sm:mb-10 leading-relaxed font-light">
-                Bridging the gap between technology and creativity through innovative programs, workshops, and hands-on
-                learning experiences that shape the future of digital craftsmanship.
+              <p className="text-lg sm:text-xl leading-[3rem] text-gray-600 mb-8 sm:mb-10 font-light "  style={{ lineHeight: '2rem' }}>
+                From digital dreams to tangible expressions — we’re building a world where creativity is intelligent and creation is emotional.
+                This isn't just Art or Tech. This is Createch.
               </p>
 
               {/* Feature Pills */}
               <div className="flex flex-wrap gap-3 mb-8 sm:mb-10">
                 <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300">
                   <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                  <span className="text-sm font-medium text-gray-700">Expert-Led Programs</span>
+                  <span className="text-sm font-medium text-gray-700">Expert-Led Experiences</span>
                 </div>
                 <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300">
                   <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
-                  <span className="text-sm font-medium text-gray-700">Hands-On Learning</span>
+                  <span className="text-sm font-medium text-gray-700">Crafted by Creators</span>
                 </div>
                 <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300">
                   <div className="w-2 h-2 bg-purple-500 rounded-full mr-2"></div>
@@ -296,12 +299,12 @@ export default function HomePage() {
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-brand-cyan-200 rounded-2xl opacity-40 animate-bounce-gentle"></div>
 
                 {/* Main image */}
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-500">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-500 w-[650px]">
                   <Image
-                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&auto=format&fit=crop&q=60"
+                    src="https://res.cloudinary.com/duoa4uzr3/image/upload/v1752785561/WhatsApp_Image_2025-07-18_at_01.23.03_e3199d00_zcqxz5.jpg"
                     alt="Students collaborating on creative technology projects"
-                    width={600}
-                    height={500}
+                    width={650}
+                    height={550}
                     className="object-cover hover:scale-105 transition-transform duration-700"
                     priority
                   />
@@ -315,8 +318,8 @@ export default function HomePage() {
                       <Users className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <p className="text-2xl font-bold text-gray-900">50+</p>
-                      <p className="text-sm text-gray-600">Clients</p>
+                      <p className="text-2xl font-bold text-gray-900">100+</p>
+                      <p className="text-sm text-gray-600">Trusted Clients</p>
                     </div>
                   </div>
                 </div>
@@ -327,18 +330,18 @@ export default function HomePage() {
       </section>
 
       {/* Company Values Section - Adjacent Text Layout */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white relative">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-8 sm:mb-12 lg:mb-16 animate-fade-in-up">
+      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white relative ">
+        <div className="max-w-7xl mx-auto ">
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16 animate-fade-in-up justify-center">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-display font-bold text-gray-900 mb-3 sm:mb-4 lg:mb-6">
               About Stasis Artis
             </h3>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-2">
-              Discover what drives us and shapes our vision for the future of creative technology education
+            At Stasis Artis, we believe creativity isn't limited to canvas or code — it's born at their intersection. We’re building a world where logic meets emotion, art meets innovation, and every creator finds their voice in both craft and technology.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {companyValues.map((value, index) => {
               const IconComponent = value.icon
               return (
@@ -355,8 +358,15 @@ export default function HomePage() {
                     <div className="bg-white/20 w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6 backdrop-blur-sm">
                       <IconComponent className="h-8 w-8 lg:h-10 lg:w-10 text-white" />
                     </div>
-                    <h4 className="text-xl lg:text-2xl font-display font-bold mb-3 lg:mb-4">{value.title}</h4>
-                    <p className="text-sm lg:text-base leading-relaxed opacity-95">{value.description}</p>
+                    {/* <h4 className="text-xl lg:text-2xl font-display font-bold mb-3 lg:mb-4" style={{ textSizeAdjust: "revert-layer" }}>{value.title}</h4> */}
+                    <h4
+  className="text-3xl lg:text-4xl font-display font-bold mb-4"
+  style={{ textSizeAdjust: "revert-layer" }}
+>
+  {value.title}
+</h4>
+
+                    <p className="text-sm text-start lg:text-base leading-relaxed opacity-95">{value.description}</p>
                   </div>
                 </div>
               )
@@ -377,7 +387,7 @@ export default function HomePage() {
               Our Offerings
             </h3>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-2">
-              Discover our comprehensive range of programs designed to nurture creativity and technical skills
+            Explore pathways where logic meets imagination, and every creation speaks both tech and soul.
             </p>
           </div>
 
@@ -431,7 +441,7 @@ export default function HomePage() {
         <div className="relative max-w-5xl mx-auto text-center z-10">
           <div className="animate-fade-in-up px-2">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-display font-bold text-white mb-4 sm:mb-6 lg:mb-8">
-              Ready to Start Your Journey?
+              Ready to Start Your Journey?!
             </h3>
             <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-white/90 mb-6 sm:mb-8 lg:mb-12 leading-relaxed">
               Join us in exploring the intersection of technology and creativity
@@ -440,7 +450,7 @@ export default function HomePage() {
               href="/contact"
               className="group inline-flex items-center px-6 sm:px-8 lg:px-12 py-3 sm:py-4 lg:py-6 bg-white text-brand-teal-600 font-bold rounded-xl hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl text-sm sm:text-base lg:text-lg"
             >
-              Contact Us Today
+              Join US Now
               <ArrowRight className="ml-2 sm:ml-3 h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 group-hover:translate-x-2 transition-transform duration-300" />
             </Link>
           </div>

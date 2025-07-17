@@ -41,18 +41,18 @@ export default function ProgramsPage() {
       features: [" Creativity-based STEM programs"],
       comingSoon: true,
     },
-    {
-      // title: "🚀 Campus Creator Program",
-      title: "Campus Creator Program",
-      // duration: "Flexible",
-      // duration: "🎓 Student Leadership",
-      duration: "Student Leadership",
-      type: "Enterprise",
-      price: "Coming Soon",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=200&fit=crop",
-      features: [" Train students", " Lead the movement"],
-      comingSoon: true,
-    },
+    // {
+    //   // title: "🚀 Campus Creator Program",
+    //   title: "Campus Creator Program",
+    //   // duration: "Flexible",
+    //   // duration: "🎓 Student Leadership",
+    //   duration: "Student Leadership",
+    //   type: "Enterprise",
+    //   price: "Coming Soon",
+    //   image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=200&fit=crop",
+    //   features: [" Train students", " Lead the movement"],
+    //   comingSoon: true,
+    // },
   ]
 
   return (
@@ -125,7 +125,7 @@ export default function ProgramsPage() {
             </div>
             <div className="relative">
               <Image
-                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=500&fit=crop"
+                src="https://res.cloudinary.com/duoa4uzr3/image/upload/v1752790035/1686663582907_cg2ntd.jpg"
                 alt="Students learning in modern classroom with laptops"
                 width={600}
                 height={500}

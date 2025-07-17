@@ -108,7 +108,7 @@ export default function InternshipsPage() {
             </div>
             <div className="relative">
               <Image
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&h=500&fit=crop"
+                src="https://res.cloudinary.com/duoa4uzr3/image/upload/v1752789960/people_on_laptops_rcmav2.jpg"
                 alt="Young professionals collaborating in modern workspace"
                 width={600}
                 height={500}
