@@ -23,7 +23,7 @@ export default function CodePage() {
       // price: "Coming Soon",
       image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=300&h=200&fit=crop",
       features: [" UI/UX for physical interfaces", " System thinking for hybrid products", " Prototyping with Figma & hardware", " Collaborative design & iteration workflows"],
-      comingSoon: true,
+      comingSoon: false,
     },
     {
       // title: "🤖 Prompt & Prototype",
