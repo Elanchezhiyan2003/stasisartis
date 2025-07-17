@@ -299,7 +299,7 @@ export default function HomePage() {
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-brand-cyan-200 rounded-2xl opacity-40 animate-bounce-gentle"></div>
 
                 {/* Main image */}
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-500 w-[650px]">
+                {/* <div className="relative rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-500 w-[650px]">
                   <Image
                     src="https://res.cloudinary.com/duoa4uzr3/image/upload/v1752785561/WhatsApp_Image_2025-07-18_at_01.23.03_e3199d00_zcqxz5.jpg"
                     alt="Students collaborating on creative technology projects"
@@ -309,7 +309,20 @@ export default function HomePage() {
                     priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-teal-900/20 via-transparent to-transparent"></div>
-                </div>
+                </div> */}
+                <div className="px-4 md:px-8 lg:px-0">
+  <div className="relative rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-500 max-w-full aspect-[4/3]">
+    <Image
+      src="https://res.cloudinary.com/duoa4uzr3/image/upload/v1752785561/WhatsApp_Image_2025-07-18_at_01.23.03_e3199d00_zcqxz5.jpg"
+      alt="Students collaborating on creative technology projects"
+      fill
+      className="object-cover hover:scale-105 transition-transform duration-700 rounded-2xl"
+      priority
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-brand-teal-900/20 via-transparent to-transparent" />
+  </div>
+</div>
+
 
                 {/* Floating stats card */}
                 <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-4 animate-slide-in-bottom border border-gray-100">
