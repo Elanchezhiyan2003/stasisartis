@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft, Palette, Sparkles, Users, Clock, CheckCircle } from "lucide-react"
-import Footer from "@/components/footer"
+// import Footer from "@/components/footer"
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
 
 export default function CraftPage() {
@@ -139,7 +139,7 @@ export default function CraftPage() {
               <Image src="/stasis-logo.png" alt="Stasis Artis Logo" width={60} height={60} className="rounded-lg" />
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">Stasis Artis</h1>
-                <p className="text-sm text-gray-600">Createch Company</p>
+                <p className="text-sm text-gray-600 font-serif tracking-tight">Code ∩ Craft</p>
               </div>
             </Link>
             <nav className="hidden md:flex space-x-8">
@@ -173,13 +173,12 @@ export default function CraftPage() {
               <div className="bg-brand-orange-500 w-16 h-16 rounded-lg flex items-center justify-center mb-6 animate-float">
                 <Palette className="h-8 w-8 text-white" />
               </div>
-              <h1 className="text-5xl font-bold font-display text-gray-900 mb-6">Craft</h1>
+              <h1 className="text-6xl font-display font-bold text-gray-900 mb-8 gradient-text">Craft your story Shape what matters</h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Discover the mesmerizing world of resin art and crafting. Our hands-on workshops will teach you
-                everything from basic techniques to advanced product creation, helping you turn your creativity into
-                beautiful, functional art pieces.
+              From resin art to preservation design and immersive art installations — create with heart, hands, and vision.
+              Every pour, every piece, every space you shape becomes a story made tangible.
               </p>
-              <div className="flex flex-wrap gap-4 mb-8">
+              {/* <div className="flex flex-wrap gap-4 mb-8">
                 <div className="flex items-center text-gray-600">
                   <Sparkles className="h-5 w-5 mr-2" />
                   <span>3 Skill Levels</span>
@@ -192,12 +191,12 @@ export default function CraftPage() {
                   <Clock className="h-5 w-5 mr-2" />
                   <span>Flexible Workshops</span>
                 </div>
-              </div>
+              </div> */}
               <Link
-                href="/contact"
-                className="inline-flex items-center px-8 py-4 bg-brand-gradient-reverse text-white font-semibold rounded-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 shadow-lg animate-bounce-gentle"
+                href=""
+                className="inline-flex  items-center px-8 py-4 bg-brand-gradient-reverse text-white font-semibold rounded-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 shadow-lg animate-bounce-gentle"
               >
-                Join Workshop
+                Comming Soon
               </Link>
             </div>
             <div className="relative">
@@ -214,7 +213,7 @@ export default function CraftPage() {
       </section>
 
       {/* Workshops Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      {/* <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold font-display text-gray-900 mb-4">Available Workshops</h2>
@@ -224,7 +223,7 @@ export default function CraftPage() {
             </p>
           </div>
 
-          <div className="relative">
+          {/* <div className="relative">
             <Carousel className="w-full">
               <CarouselContent>
                 {workshops.map((workshop, index) => (
@@ -249,9 +248,9 @@ export default function CraftPage() {
                       <div className="p-6">
                         <h3 className="text-xl font-bold text-gray-900 mb-2">{workshop.title}</h3>
                         <div className="flex items-center justify-between mb-4">
-                          <span className="text-gray-600 flex items-center">
+                          <span className="text-gray-600 flex items-center"> */}
                             {/* <Clock className="h-4 w-4 mr-1" /> */}
-                            {workshop.duration}
+                            {/* {workshop.duration}
                           </span>
                           <span className="text-2xl font-bold text-purple-600">{workshop.price}</span>
                         </div>
@@ -283,12 +282,12 @@ export default function CraftPage() {
               <CarouselPrevious className="-left-6 md:-left-10" />
               <CarouselNext className="-right-6 md:-right-10" />
             </Carousel>
-          </div>
-        </div>
-      </section>
+          </div> */}
+        {/* </div> */}
+      {/* // </section>  */}
 
       {/* Gallery Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      {/* <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold font-display text-gray-900 mb-4">Student Creations</h2>
@@ -319,10 +318,10 @@ export default function CraftPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }

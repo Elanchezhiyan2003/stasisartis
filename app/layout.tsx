@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Inter, Bricolage_Grotesque } from "next/font/google"
 import "./globals.css"
 import ScrollToTop from "@/components/scroll-to-top"
+import Footer from "@/components/footer"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const bricolageGrotesque = Bricolage_Grotesque({
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${bricolageGrotesque.variable} font-sans antialiased`}>
         <ScrollToTop />
         {children}
+        <Footer />
       </body>
     </html>
   )

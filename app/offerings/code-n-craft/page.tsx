@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft, Users, Zap, Clock, CheckCircle, Code, Palette } from "lucide-react"
-import Footer from "@/components/footer"
+// import Footer from "@/components/footer"
 
 export default function CodeNCraftPage() {
   const workshops = [
@@ -65,7 +65,7 @@ export default function CodeNCraftPage() {
               <Image src="/stasis-logo.png" alt="Stasis Artis Logo" width={60} height={60} className="rounded-lg" />
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">Stasis Artis</h1>
-                <p className="text-sm text-gray-600">Createch Company</p>
+                <p className="text-sm text-gray-600 font-serif tracking-tight">Code ∩ Craft</p>
               </div>
             </Link>
             <nav className="hidden md:flex space-x-8">
@@ -96,12 +96,12 @@ export default function CodeNCraftPage() {
               <div className="bg-brand-teal-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6 animate-scale-pulse">
                 <Users className="h-8 w-8 text-white" />
               </div>
-              <h1 className="text-5xl font-bold text-gray-900 mb-6 font-display">Code-n-Craft</h1>
+              <h1 className="text-6xl font-display font-bold text-gray-900 mb-8 gradient-text">Fusion-Built Function-Driven</h1>
+              
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Experience the perfect fusion of technology and artistry. Our unique workshops combine programming
-                skills with hands-on crafting, creating innovative projects that bridge the digital and physical worlds.
+              Where every product is coded to feel, light, or move. From LEDs to microcontrollers, each piece is a tactile dialogue between hardware and human emotion — hand-poured in resin and wired with purpose. This is Createch, preserved in design and alive with intelligence.
               </p>
-              <div className="flex flex-wrap gap-4 mb-8">
+              {/* <div className="flex flex-wrap gap-4 mb-8">
                 <div className="flex items-center text-gray-600">
                   <Code className="h-5 w-5 mr-2" />
                   <span>Programming Skills</span>
@@ -114,12 +114,12 @@ export default function CodeNCraftPage() {
                   <Zap className="h-5 w-5 mr-2" />
                   <span>Innovation Focus</span>
                 </div>
-              </div>
+              </div> */}
               <Link
-                href="/contact"
+                href=""
                 className="inline-flex items-center px-8 py-4 bg-brand-gradient text-white font-semibold rounded-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 shadow-lg animate-bounce-gentle"
               >
-                Join Fusion Workshop
+                Comming Soon
               </Link>
             </div>
             <div className="relative">
@@ -136,17 +136,20 @@ export default function CodeNCraftPage() {
       </section>
 
       {/* Workshops Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4 font-display">Fusion Workshops</h2>
+      {/* <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white"> */}
+        {/* <div className="max-w-7xl mx-auto"> */}
+          {/* <div className="text-center mb-16"> */}
+            {/* <h2 className="text-3xl font-bold text-gray-900 mb-4 font-display">Fusion Workshops</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Explore our innovative workshops that combine the best of both worlds
-            </p>
-            <h2 className="text-6xl font-bold text-red-400 mb-4 font-display m-20">Comming Soon</h2>
-          </div>
+            </p> */}
+            {/* <h2 className="text-6xl font-bold text-red-400 mb-4 font-display m-20">Comming Soon</h2> */}
+            {/* <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-red-400 font-display text-center">
+    Coming Soon
+  </h2> */}
+          {/* </div> */}
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> */}
             {/* {workshops.map((workshop, index) => (
               <div
                 key={index}
@@ -191,12 +194,12 @@ export default function CodeNCraftPage() {
               </div>
             ))} */}
            
-          </div>
-        </div>
-      </section>
+          {/* </div> */}
+        {/* </div> */}
+      {/* </section> */}
 
       {/* Process Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      {/* <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4 font-display">Our Fusion Process</h2>
@@ -223,10 +226,10 @@ export default function CodeNCraftPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

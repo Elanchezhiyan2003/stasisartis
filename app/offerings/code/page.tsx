@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft, Code, BookOpen, Users, Clock, CheckCircle, Star } from "lucide-react"
-import Footer from "@/components/footer"
+// import Footer from "@/components/footer"
 
 export default function CodePage() {
   const courses = [
@@ -11,7 +11,7 @@ export default function CodePage() {
       duration: " 8 weeks",
       level: "Beginner",
       // price: "Coming Soon",
-      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752747580/wmremove-transformed_n0zryy.png",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752814102/4a3e763a5ad00c6429bac51cf6caa24e_bvdqbs.jpg",
       features: ["Microcontrollers (Arduino, ESP32 basics)", " Sensor integration & real-world interfacing", " C/C++ for embedded applications", "Build your first smart hardware project"],
       comingSoon: true,
     },
@@ -21,7 +21,7 @@ export default function CodePage() {
       duration: " 4 weeks",
       level: "Intermediate",
       // price: "Coming Soon",
-      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752746597/5757453_od0bev.jpg",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752814292/flat-design-ui-ux-background_23-2149093995_m2fsxo.avif",
       features: [" UI/UX for physical interfaces", " System thinking for hybrid products", " Prototyping with Figma & hardware", " Collaborative design & iteration workflows"],
       comingSoon: false,
     },
@@ -31,7 +31,7 @@ export default function CodePage() {
       duration: "4 weeks",
       level: "Beginner",
       // price: "Coming Soon",
-      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752747014/ai-site-helping-with-content-production_za4rvj.jpg",
+      image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752814483/WhatsApp_Image_2025-07-18_at_10.14.31_b93dffab_n7fnta.jpg",
       features: ["AI prompt engineering (text/image)" , " No-code to low-code prototyping tools", "Generative workflows with ChatGPT, Midjourney", " Build & test AI-enhanced interactive concepts"],
       comingSoon: true,
     },
@@ -67,7 +67,7 @@ export default function CodePage() {
                 <h1 className="text-2xl font-display font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
                   Stasis Artis
                 </h1>
-                <p className="text-sm text-gray-600">Createch Company</p>
+                <p className="text-sm text-gray-600 font-serif tracking-tight">Code ∩ Craft</p>
               </div>
             </Link>
             <nav className="hidden md:flex space-x-10">
@@ -109,11 +109,11 @@ export default function CodePage() {
               <div className="bg-brand-teal-500 w-20 h-20 rounded-2xl flex items-center justify-center mb-8 hover:scale-110 hover:rotate-6 transition-all duration-300 shadow-lg hover-glow animate-float">
                 <Code className="h-10 w-10 text-white" />
               </div>
-              <h1 className="text-6xl font-display font-bold text-gray-900 mb-8 gradient-text">Code</h1>
+              <h1 className="text-6xl font-display font-bold text-gray-900 mb-8 gradient-text">Code your curiosity Build your edge</h1>
               <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-                Master the art of programming and digital design through our comprehensive coding courses. From web
-                development fundamentals to advanced DesignOps practices, we'll guide you through your journey to
-                becoming a skilled developer.
+              
+Explore Embedded 101, AI Prompting, Prototyping & more — all designed to fuel your future.
+Every line you write moves you closer to innovation, internships, and industry-ready skills.
               </p>
               <div className="flex flex-wrap gap-6 mb-10">
                 <div className="flex items-center text-gray-600 bg-white px-4 py-2 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
@@ -255,7 +255,7 @@ export default function CodePage() {
       </section>
 
       {/* Footer */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

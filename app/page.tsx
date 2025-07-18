@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import Footer from "@/components/footer"
+// import Footer from "@/components/footer"
 import {
   ArrowRight,
   Code,
@@ -469,9 +469,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <Footer />
+{/* <Footer/> */}
+      
     </div>
   )
 }

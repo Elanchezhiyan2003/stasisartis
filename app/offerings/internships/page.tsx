@@ -1,7 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft, GraduationCap, Users, Clock, CheckCircle, Star, Award, Briefcase } from "lucide-react"
-import Footer from "@/components/footer"
+// import Footer from "@/components/footer"
+import { Button } from "@/components/ui/button"
 
 export default function InternshipsPage() {
   const programs = [
@@ -44,7 +45,7 @@ export default function InternshipsPage() {
               <Image src="/stasis-logo.png" alt="Stasis Artis Logo" width={60} height={60} className="rounded-lg" />
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">Stasis Artis</h1>
-                <p className="text-sm text-gray-600">Createch Company</p>
+                <p className="text-sm text-gray-600 font-serif tracking-tight">Code ∩ Craft</p>
               </div>
             </Link>
             <nav className="hidden md:flex space-x-8">
@@ -71,14 +72,14 @@ export default function InternshipsPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      {/* <section className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="bg-brand-orange-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6 animate-wiggle">
                 <GraduationCap className="h-8 w-8 text-white" />
               </div>
-              <h1 className="text-5xl font-bold font-display text-gray-900 mb-6">Internships</h1>
+              <h1 className="text-5xl font-bold font-display text-gray-900 mb-6">Internship</h1>
               <h2 className="text-2xl font-semibold text-orange-600 mb-4">Createch Capsule Program</h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Launch your career with our comprehensive internship program. Gain real-world experience, work on live
@@ -117,10 +118,66 @@ export default function InternshipsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <section className="py-16 px-4 sm:px-8 lg:px-16 bg-white">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    {/* LEFT TEXT BLOCK */}
+    <div>
+      <div className="bg-orange-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6 animate-wiggle">
+        <GraduationCap className="h-8 w-8 text-white" />
+      </div>
+
+      <h1 className="text-4xl md:text-5xl font-bold text-gray-900 font-display mb-4">
+        Internship
+      </h1>
+      <h2 className="text-2xl font-semibold text-orange-600 mb-6">
+        Createch Capsule Program
+      </h2>
+      <p className="text-lg text-gray-700 leading-relaxed mb-6">
+        Launch your career with our comprehensive internship program. Gain real-world experience, work on live projects, and receive mentorship from industry professionals in our innovative Createch Capsule environment.
+      </p>
+
+      {/* Feature Points */}
+      {/* <div className="flex flex-wrap gap-x-6 gap-y-4 mb-8">
+        <div className="flex items-center text-gray-600">
+          <Briefcase className="h-5 w-5 mr-2" />
+          <span>Real Projects</span>
+        </div>
+        <div className="flex items-center text-gray-600">
+          <Users className="h-5 w-5 mr-2" />
+          <span>Expert Mentorship</span>
+        </div>
+        <div className="flex items-center text-gray-600">
+          <Award className="h-5 w-5 mr-2" />
+          <span>Certification</span>
+        </div>
+      </div> */}
+
+      {/* CTA BUTTON */}
+      <Link
+        href="/contact"
+        className="inline-flex items-center px-8 py-4 text-lg bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold rounded-xl hover:from-orange-700 hover:to-red-700 shadow-lg transition-all duration-300 transform hover:scale-105"
+      >
+        Apply Now
+      </Link>
+    </div>
+
+    {/* IMAGE BLOCK */}
+    <div className="relative">
+      <Image
+        src="https://res.cloudinary.com/duoa4uzr3/image/upload/v1752789960/people_on_laptops_rcmav2.jpg"
+        alt="Young professionals collaborating in modern workspace"
+        width={600}
+        height={500}
+        className="rounded-xl shadow-2xl object-cover w-full h-auto"
+      />
+    </div>
+  </div>
+</section>
+
 
       {/* Programs Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      {/* <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold font-display text-gray-900 mb-4">Available Internship Programs</h2>
@@ -169,20 +226,20 @@ export default function InternshipsPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Benefits Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold font-display text-gray-900 mb-4">Why Choose Our Internship Program?</h2>
+            <h2 className="text-4xl font-bold font-display text-gray-900 mb-8">Why Choose Our Internship Program?</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Star, title: "Industry Experience", description: "Work on real projects with actual clients" },
+              { icon: Star, title: "Portfolio Ready Projects", description: "Work on real projects with actual clients" },
               { icon: Users, title: "Expert Mentorship", description: "One-on-one guidance from senior professionals" },
               { icon: Award, title: "Certification", description: "Receive industry-recognized certificates" },
-              { icon: Briefcase, title: "Job Placement", description: "High placement rate in top companies" },
+              { icon: Briefcase, title: "Startup-Led Experience", description: "Step into a founder-run environment where your ideas count" },
             ].map((item, index) => {
               const IconComponent = item.icon
               return (
@@ -200,33 +257,36 @@ export default function InternshipsPage() {
       </section>
 
       {/* Application Process */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold font-display text-gray-900 mb-4">Application Process</h2>
-            <p className="text-lg text-gray-600">Simple steps to join our internship program</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              { step: "01", title: "Apply", description: "Submit your application with portfolio" },
-              { step: "02", title: "Interview", description: "Technical and cultural fit assessment" },
-              { step: "03", title: "Selection", description: "Receive confirmation and program details" },
-              { step: "04", title: "Start", description: "Begin your internship journey with us" },
-            ].map((item, index) => (
-              <div key={index} className="text-center">
-                <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                  {item.step}
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+  <div className="max-w-6xl mx-auto">
+    <div className="text-center max-w-3xl mx-auto" >
+      <h2 className="text-4xl sm:text-5xl font-bold font-display text-gray-900 mb-8">
+        Ready to Step In ?
+      </h2>
+
+      <p className="text-xl sm:text-2xl text-gray-700 mb-6">
+        Interviews here aren’t to judge — they’re to discover who you are.
+      </p>
+
+      <p className="text-lg sm:text-xl text-gray-600 mb-8">
+         Just tell us what you love building — we’ll take it from there.
+      </p>
+      <Link
+        href="/contact"
+        className="inline-flex items-center justify-center px-10 py-5 bg-brand-gradient text-white font-semibold rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-bounce-gentle"
+      >
+        Apply Now
+      </Link>
+      {/* <Button className="bg-teal-600 hover:bg-teal-700 text-white text-lg px-8 py-3 rounded-lg shadow-md transition">
+        Apply Now
+      </Button> */}
+    </div>
+  </div>
+</section>
+
 
       {/* Footer */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

@@ -5,7 +5,7 @@ import type React from "react"
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import Footer from "@/components/footer"
+// import Footer from "@/components/footer"
 import { ArrowLeft, Send, Mail, Phone, MapPin, CheckCircle, AlertCircle } from "lucide-react"
 
 // Inject the Web3Forms access key at build time
@@ -25,11 +25,11 @@ export default function ContactPage() {
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
 
   const interests = [
-    "Code Courses",
-    "Craft Workshops",
-    "Code-n-Craft Fusion",
-    "Internship Program",
-    "School Programs",
+    "Courses",
+    "Workshops",
+    "Fusion Products",
+    "Internship",
+    "School/College",
     "Bulk Orders",
     "Partnership Opportunities",
     "General Inquiry",
@@ -143,7 +143,7 @@ export default function ContactPage() {
                 <h1 className="text-xl sm:text-2xl font-display font-bold text-gray-900 group-hover:text-brand-teal-600 transition-colors duration-300">
                   Stasis Artis
                 </h1>
-                <p className="text-xs sm:text-sm text-gray-600">Createch Company</p>
+                <p className="text-xs sm:text-sm text-gray-600 font-serif tracking-tight">Code ∩ Craft</p>
               </div>
             </Link>
             <nav className="hidden md:flex space-x-8 lg:space-x-10">
@@ -364,7 +364,7 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-semibold text-gray-900 text-base sm:text-lg mb-1">Email</h4>
                                             {/* <p className="text-gray-600 text-base sm:text-lg">hello@stasisartis.com</p> */}
-                      <p className="text-gray-600 text-base sm:text-lg">order.stasisartis@gmail.com</p>
+                      <p className="text-gray-600 text-base sm:text-lg">stasisartisofficial@gmail.com</p>
                       <p className="text-gray-500 text-xs sm:text-sm">We'll respond within 24 hours</p>
                     </div>
                   </div>
@@ -419,15 +419,15 @@ export default function ContactPage() {
                   </li>
                   <li className="flex items-center text-sm sm:text-base">
                     <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-3 sm:mr-4 flex-shrink-0" />
-                    Flexible scheduling options
+                    Premium Quality Products
+                  </li>
+                  <li className="flex items-center text-sm sm:text-base">
+                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-3 sm:mr-4 flex-shrink-0" />
+                    Startup-Led Experience
                   </li>
                   <li className="flex items-center text-sm sm:text-base">
                     <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-3 sm:mr-4 flex-shrink-0" />
                     Comprehensive support system
-                  </li>
-                  <li className="flex items-center text-sm sm:text-base">
-                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-3 sm:mr-4 flex-shrink-0" />
-                    Industry-recognized certifications
                   </li>
                 </ul>
               </div>
@@ -437,7 +437,7 @@ export default function ContactPage() {
       </section>
 
       {/* Footer */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
