@@ -128,15 +128,15 @@ export default function ContactPage() {
           <div className="flex justify-between items-center py-4 sm:py-5">
             <Link
               href="/"
-              className="flex items-center space-x-3 sm:space-x-4 hover:opacity-80 transition-all duration-300 group"
+              className="flex items-center rounded-full space-x-3 sm:space-x-4 hover:opacity-80 transition-all duration-300 group"
             >
               <div className="relative">
                 <Image
-                  src="/stasis-logo.png"
+                  src="/sa.jpg"
                   alt="Stasis Artis Logo"
                   width={45}
                   height={45}
-                  className="sm:w-[55px] sm:h-[55px] rounded-xl group-hover:scale-105 transition-transform duration-300"
+                  className="sm:w-[55px] sm:h-[55px] rounded-full group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div>

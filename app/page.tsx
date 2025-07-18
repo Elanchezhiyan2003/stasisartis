@@ -25,7 +25,7 @@ export default function HomePage() {
   const offerings = [
     {
       title: "Code",
-      description: "Emmebedded 101, DesignOps..",
+      description: "Embedded 101, DesignOps..",
       icon: Code,
       color: "bg-brand-teal-500",
       slug: "code",
@@ -49,7 +49,7 @@ export default function HomePage() {
     },
     {
       title: "Internships",
-      description: "Createch Internship, Studio Apprentaion...",
+      description: "Createch Internship, Studio Apprenticeship...",
       icon: GraduationCap,
       color: "bg-brand-emerald-600",
       slug: "internships",
@@ -113,7 +113,7 @@ export default function HomePage() {
           <div className="flex justify-between items-center py-4 sm:py-5">
             <Link
               href="/"
-              className="flex items-center space-x-3 sm:space-x-4 hover:opacity-80 transition-all duration-300 group"
+              className="flex items-center rounded-full space-x-3 sm:space-x-4 hover:opacity-80 transition-all duration-300 group"
             >
               <div className="relative">
                 <Image
@@ -252,13 +252,14 @@ export default function HomePage() {
                 <span className="text-gray-900">Meets Craft</span>
               </h2>
 
-              <p className="text-lg sm:text-xl leading-[3rem] text-gray-600 mb-8 sm:mb-10 font-light "  style={{ lineHeight: '2rem' }}>
+              {/* <p className="text-base sm:text-lg leading-relaxed text-gray-600 mb-8 sm:mb-10 font-light "  style={{ lineHeight: '2rem' }}> */}
+              <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-2"  style={{ lineHeight: '2rem' }}>
                 From digital dreams to tangible expressions — we’re building a world where creativity is intelligent and creation is emotional.
                 This isn't just Art or Tech. This is Createch.
               </p>
 
               {/* Feature Pills */}
-              <div className="flex flex-wrap gap-3 mb-8 sm:mb-10">
+              <div className="flex flex-wrap gap-3 mb-8 sm:mb-10 mt-4">
                 <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300">
                   <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
                   <span className="text-sm font-medium text-gray-700">Expert-Led Experiences</span>

@@ -136,7 +136,7 @@ export default function CraftPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-              <Image src="/stasis-logo.png" alt="Stasis Artis Logo" width={60} height={60} className="rounded-lg" />
+              <Image src="/sa.jpg" alt="Stasis Artis Logo" width={60} height={60} className="rounded-full" />
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">Stasis Artis</h1>
                 <p className="text-sm text-gray-600 font-serif tracking-tight">Code ∩ Craft</p>
@@ -155,7 +155,7 @@ export default function CraftPage() {
       </header>
 
       {/* Back Button */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Link
           href="/"
           className="inline-flex items-center text-brand-orange-600 hover:text-brand-orange-700 font-medium"
@@ -166,7 +166,7 @@ export default function CraftPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-2 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -196,7 +196,7 @@ export default function CraftPage() {
                 href=""
                 className="inline-flex  items-center px-8 py-4 bg-brand-gradient-reverse text-white font-semibold rounded-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 shadow-lg animate-bounce-gentle"
               >
-                Comming Soon
+                Coming Soon
               </Link>
             </div>
             <div className="relative">

@@ -62,7 +62,7 @@ export default function ProgramsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-              <Image src="/stasis-logo.png" alt="Stasis Artis Logo" width={60} height={60} className="rounded-lg" />
+              <Image src="/sa.jpg" alt="Stasis Artis Logo" width={60} height={60} className="rounded-full" />
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">Stasis Artis</h1>
                 <p className="text-sm text-gray-600 font-serif tracking-tight">Code ∩ Craft</p>
@@ -129,7 +129,8 @@ export default function ProgramsPage() {
                 alt="Students learning in modern classroom with laptops"
                 width={600}
                 height={500}
-                className="rounded-xl shadow-2xl"
+                // className="rounded-xl shadow-2xl lg:w-[400px]"
+                className="w-full sm:w-[300px] lg:w-[600px] lg:h-[400px] object-cover bg-white rounded-xl shadow-md "
               />
             </div>
           </div>
@@ -180,7 +181,7 @@ export default function ProgramsPage() {
                     className="w-full bg-gradient-to-r from-red-600 to-pink-600 text-white  rounded-lg hover:from-red-700 hover:to-pink-700  py-3 px-4  hover:bg-pink-700 transition-colors font-semibold text-center block"
                   >
                     {/* Learn More */}
-                   For Enquiry
+                   Enquire Now
                   </Link>
                 </div>
               </div>
@@ -229,7 +230,7 @@ export default function ProgramsPage() {
           </div>
         </div>
       </section>
-      <section className="w-[70rem] mx-auto bg-gradient-to-br from-teal-500 to-[#061018] px-4 py-12 mb-24 mt-14 rounded-full">
+      {/* <section className="w-[70rem] mx-auto bg-gradient-to-br from-teal-500 to-[#061018] px-4 py-12 mb-24 mt-14 rounded-full">
   <div className="max-w-5xl mx-auto text-center">
     <p className="text-2xl sm:text-3xl md:text-3xl font-serif italic text-white leading-relaxed" style={{ lineHeight: "1.50" }}>
       "In a world of automation, we choose sensation. In a world of code, we
@@ -239,7 +240,19 @@ export default function ProgramsPage() {
       — <span className="hover:underline cursor-pointer">The Stasis Artis Philosophy</span>
     </p>
   </div>
+</section> */}
+<section className="w-full max-w-4xl  sm:max-w-5xl mx-auto bg-gradient-to-br from-teal-500 to-[#061018] px-4 sm:px-6 py-12 sm:py-10 mb-24 mt-14 rounded-xl sm:rounded-full">
+  <div className="text-center">
+    <p className="text-xl sm:text-2xl md:text-3xl font-serif italic text-white leading-relaxed" style={{ lineHeight: "1.5" }}>
+      "In a world of automation, we choose sensation. In a world of code, we
+      choose craft. But most importantly, we choose both."
+    </p>
+    <p className="mt-6 text-teal-100 text-sm sm:text-base md:text-lg font-medium tracking-wide">
+      — <span className="hover:underline cursor-pointer">The Stasis Artis Philosophy</span>
+    </p>
+  </div>
 </section>
+
 
 
       {/* Footer */}

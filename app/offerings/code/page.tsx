@@ -56,11 +56,11 @@ export default function CodePage() {
             <Link href="/" className="flex items-center space-x-4 hover:opacity-80 transition-all duration-300 group">
               <div className="relative">
                 <Image
-                  src="/stasis-logo.png"
+                  src="/sa.jpg"
                   alt="Stasis Artis Logo"
                   width={55}
                   height={55}
-                  className="rounded-xl group-hover:scale-105 transition-transform duration-300"
+                  className="rounded-full group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div>
@@ -151,70 +151,76 @@ Every line you write moves you closer to innovation, internships, and industry-r
       </section>
 
       {/* Courses Section */}
-      <section className="py-20 px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-4xl font-display font-bold text-gray-900 mb-6">Available Courses</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Choose from our carefully crafted curriculum designed to take you from beginner to professional
-            </p>
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-16 animate-fade-in-up px-4">
+      <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900 mb-6">
+        Available Courses
+      </h2>
+      <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Choose from our carefully crafted curriculum designed to take you from beginner to professional
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+      {courses.map((course, index) => (
+        <div
+          key={index}
+          className="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-blue-200 group animate-fade-in-up hover-glow transform hover:-translate-y-1"
+          style={{ animationDelay: `${index * 0.1}s` }}
+        >
+          <div className="relative h-48 sm:h-52 md:h-56 lg:h-60 w-full overflow-hidden">
+            <Image
+              src={course.image || "/placeholder.svg"}
+              alt={course.title}
+              fill
+              className="object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+            <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold text-brand-teal-600 shadow">
+              {course.level}
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {courses.map((course, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-blue-200 group animate-fade-in-up hover-glow transform hover:-translate-y-2"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="relative h-52 overflow-hidden">
-                  <Image
-                    src={course.image || "/placeholder.svg"}
-                    alt={course.title}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold text-brand-teal-600 shadow-lg animate-wiggle">
-                    {course.level}
-                  </div>
-                </div>
-                <div className="p-8">
-                  <h3 className="text-2xl font-display font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
-                    {course.title}
-                  </h3>
-                  <div className="flex items-center justify-between mb-6">
-                    <span className="text-gray-600 flex items-center bg-gray-50 px-3 py-1 rounded-lg">
-                      <Clock className="h-4 w-4 mr-1 text-blue-600" />
-                      {course.duration}
-                    </span>
-                    {/* <span className="text-3xl font-bold text-blue-600">{course.price}</span> */}
-                  </div>
-                  <ul className="space-y-3 mb-8">
-                    {course.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-gray-600">
-                        <CheckCircle className="h-5 w-5 mr-3 text-green-500" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  {course.comingSoon ? (
-                    <div className="w-full bg-gray-400 text-white py-4 px-6 rounded-xl font-semibold text-center cursor-not-allowed">
-                      Coming Soon
-                    </div>
-                  ) : (
-                    <Link
-                      href="/contact"
-                      className="w-full bg-brand-gradient text-white py-4 px-6 rounded-xl hover:shadow-lg transition-all duration-300 font-semibold text-center block transform hover:scale-105 shadow-lg"
-                    >
-                      Enroll Now
-                    </Link>
-                  )}
-                </div>
+          <div className="p-6 sm:p-8">
+            <h3 className="text-xl sm:text-2xl font-display font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
+              {course.title}
+            </h3>
+
+            <div className="flex items-center justify-between mb-4 sm:mb-6">
+              <span className="text-gray-600 flex items-center bg-gray-50 px-3 py-1 rounded-lg text-sm sm:text-base">
+                <Clock className="h-4 w-4 mr-1 text-blue-600" />
+                {course.duration}
+              </span>
+            </div>
+
+            <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 text-sm sm:text-base">
+              {course.features.map((feature, idx) => (
+                <li key={idx} className="flex items-center text-gray-600">
+                  <CheckCircle className="h-5 w-5 mr-3 text-green-500" />
+                  {feature}
+                </li>
+              ))}
+            </ul>
+
+            {course.comingSoon ? (
+              <div className="w-full bg-gray-400 text-white py-3 sm:py-4 px-4 sm:px-6 rounded-xl font-semibold text-center cursor-not-allowed text-sm sm:text-base">
+                Coming Soon
               </div>
-            ))}
+            ) : (
+              <Link
+                href="/contact"
+                className="w-full bg-brand-gradient text-white py-3 sm:py-4 px-4 sm:px-6 rounded-xl hover:shadow-lg transition-all duration-300 font-semibold text-center block transform hover:scale-105 shadow-lg text-sm sm:text-base"
+              >
+                Enroll Now
+              </Link>
+            )}
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Why Choose Us Section */}
       <section className="py-20 px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white">

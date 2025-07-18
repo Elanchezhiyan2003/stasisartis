@@ -62,7 +62,7 @@ export default function CodeNCraftPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-              <Image src="/stasis-logo.png" alt="Stasis Artis Logo" width={60} height={60} className="rounded-lg" />
+              <Image src="/sa.jpg" alt="Stasis Artis Logo" width={60} height={60} className="rounded-full" />
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">Stasis Artis</h1>
                 <p className="text-sm text-gray-600 font-serif tracking-tight">Code ∩ Craft</p>
@@ -119,7 +119,7 @@ export default function CodeNCraftPage() {
                 href=""
                 className="inline-flex items-center px-8 py-4 bg-brand-gradient text-white font-semibold rounded-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 shadow-lg animate-bounce-gentle"
               >
-                Comming Soon
+                Coming Soon
               </Link>
             </div>
             <div className="relative">

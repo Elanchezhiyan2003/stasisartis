@@ -8,7 +8,7 @@ export default function BulkOrdersPage() {
     {
       title: "MIY (Make It Yourself) Kits",
       category: " For Creative Workshops & DIY Enthusiasts",
-      minOrder: "Minimum Order: 7 units",
+      minOrder: "Minimum Order: 7+ units",
       // price: "Coming Soon",
       image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752816720/bulk_aqcll3.jpg",
       features: [" All Essential Materials Included",  "Step-by-Step Printed Instructions", " Custom Themes Available", "On-Demand Support from Our Team"],
@@ -17,7 +17,7 @@ export default function BulkOrdersPage() {
     {
       title: "Custom Decor Items ",
       category: " Ideal for Homes, Offices & Gifting",
-      minOrder: "Minimum Order: 25 units",
+      minOrder: "Minimum Order: 25+ units",
       // price: "Coming Soon",
       image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752816811/cus_rviuj4.jpg",
       features: ["Custom Designs", "Brand Integration", " Premium Quality Materials", " Bulk Discounts Available"],
@@ -26,7 +26,7 @@ export default function BulkOrdersPage() {
     {
       title: "Corporate Gifting & Team Essentials",
       category: " Perfect for Teams, Clients & Onboarding Kits",
-      minOrder: "Minimum Order: 50 units",
+      minOrder: "Minimum Order: 35+ units",
       // price: "Coming Soon",
       image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752816575/corp_mzxer3.jpg",
       features: ["Custom Welcome Kits", "Team Badges & Personalized Desk Tags", "Event Giveaways & Thank-You Gifts", "Premium Finish with Your Brand’s Identity"],
@@ -41,7 +41,7 @@ export default function BulkOrdersPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-              <Image src="/stasis-logo.png" alt="Stasis Artis Logo" width={60} height={60} className="rounded-lg" />
+              <Image src="/sa.jpg" alt="Stasis Artis Logo" width={60} height={60} className="rounded-full" />
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">Stasis Artis</h1>
                 <p className="text-sm text-gray-600 font-serif tracking-tight">Code ∩ Craft</p>
@@ -127,55 +127,65 @@ export default function BulkOrdersPage() {
 
       {/* Products Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4 font-display">Bulk Product Categories</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Explore our range of bulk products designed for businesses, educators, and event organizers
-            </p>
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-12 sm:mb-16 px-2 sm:px-0">
+      <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 font-display">
+        Bulk Product Categories
+      </h2>
+      <p className="text-base sm:text-lg text-gray-600 max-w-xl sm:max-w-2xl mx-auto">
+        Explore our range of bulk products designed for businesses, educators, and event organizers
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      {products.map((product, index) => (
+        <div
+          key={index}
+          className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border flex flex-col"
+        >
+          <div className="relative h-44 sm:h-48 md:h-56">
+            <Image
+              src={product.image || "/placeholder.svg"}
+              alt={product.title}
+              fill
+              className="object-cover"
+            />
+            <div className="absolute top-3 right-3 bg-white px-2 py-1 rounded-full text-xs sm:text-sm font-semibold text-indigo-600">
+              {product.category}
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.map((product, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border"
-              >
-                <div className="relative h-48">
-                  <Image src={product.image || "/placeholder.svg"} alt={product.title} fill className="object-cover" />
-                  <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold text-indigo-600">
-                    {product.category}
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{product.title}</h3>
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-gray-600 flex items-center">
-                      <Package className="h-4 w-4 mr-1" />
-                      {product.minOrder}
-                    </span>
-                    {/* <span className="text-lg font-bold text-indigo-600">{product.price}</span> */}
-                  </div>
-                  <ul className="space-y-2 mb-6">
-                    {product.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-gray-600">
-                        <CheckCircle className="h-4 w-4 mr-2 text-green-500" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  <Link
-                    href="/contact"
-                    className="w-full  bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-lg hover:from-indigo-700 hover:to-purple-700  py-3 px-4  hover:bg-indigo-700 transition-colors  text-center block"
-                  >
-                    Get Quote
-                  </Link>
-                </div>
-              </div>
-            ))}
+          <div className="p-4 sm:p-6 flex flex-col flex-grow">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1 sm:mb-2">{product.title}</h3>
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-sm sm:text-base text-gray-600 flex items-center">
+                <Package className="h-4 w-4 mr-1" />
+                {product.minOrder}
+              </span>
+            </div>
+
+            <ul className="space-y-1 sm:space-y-2 mb-4 sm:mb-6 text-sm sm:text-base flex-grow">
+              {product.features.map((feature, idx) => (
+                <li key={idx} className="flex items-center text-gray-600">
+                  <CheckCircle className="h-4 w-4 mr-2 text-green-500" />
+                  {feature}
+                </li>
+              ))}
+            </ul>
+
+            <Link
+              href="/contact"
+              className="mt-auto w-full text-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-lg hover:from-indigo-700 hover:to-purple-700 py-2.5 sm:py-3 px-4 transition-colors"
+            >
+              Get Quote
+            </Link>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Process Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
