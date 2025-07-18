@@ -165,7 +165,7 @@ export default function ProgramsPage() {
                       {/* <Clock className="h-4 w-4 mr-1" /> */}
                       {program.duration}
                     </span>
-                    <span className="text-lg font-bold text-red-600">{program.price}</span>
+                    {/* <span className="text-lg font-bold text-red-600">{program.price}</span> */}
                   </div>
                   <ul className="space-y-2 mb-6">
                     {program.features.map((feature, idx) => (
