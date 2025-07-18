@@ -154,7 +154,7 @@ export default function BulkOrdersPage() {
                       <Package className="h-4 w-4 mr-1" />
                       {product.minOrder}
                     </span>
-                    <span className="text-lg font-bold text-indigo-600">{product.price}</span>
+                    {/* <span className="text-lg font-bold text-indigo-600">{product.price}</span> */}
                   </div>
                   <ul className="space-y-2 mb-6">
                     {product.features.map((feature, idx) => (
