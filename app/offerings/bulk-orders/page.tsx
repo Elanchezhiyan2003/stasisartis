@@ -73,7 +73,7 @@ export default function BulkOrdersPage() {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       {/* Text Content */}
       <div>
-        <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg hover:from-indigo-700 hover:to-purple-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6 animate-pulse">
+        <div className="bg-gradient-to-r from-indigo-600 to-purple-600  hover:from-indigo-700 hover:to-purple-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6 animate-pulse">
           <Package className="h-8 w-8 text-white" />
         </div>
         <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 font-display tracking-wide">
