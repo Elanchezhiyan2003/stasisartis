@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Bridging the gap between technology and creativity through innovative programs, workshops, and hands-on learning experiences.",
   icons: {
-    icon: "/stasis-logo.png" ,
+    icon: "/sa.jpg" ,
   },
     // generator: 'v0.dev'
 }
