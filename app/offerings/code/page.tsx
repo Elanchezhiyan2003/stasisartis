@@ -9,7 +9,7 @@ export default function CodePage() {
       // title: "🔧 Embedded 101",
       title: "Embedded 101",
       duration: " 8 weeks",
-      level: "Beginner",
+      // level: "Beginner",
       // price: "Coming Soon",
       image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752814102/4a3e763a5ad00c6429bac51cf6caa24e_bvdqbs.jpg",
       features: ["Microcontrollers (Arduino, ESP32 basics)", " Sensor integration & real-world interfacing", " C/C++ for embedded applications", "Build your first smart hardware project"],
@@ -19,7 +19,7 @@ export default function CodePage() {
       // title: "🎨 DesignOps",
       title: "DesignOps",
       duration: " 4 weeks",
-      level: "Intermediate",
+      // level: "Intermediate",
       // price: "Coming Soon",
       image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752814292/flat-design-ui-ux-background_23-2149093995_m2fsxo.avif",
       features: [" UI/UX for physical interfaces", " System thinking for hybrid products", " Prototyping with Figma & hardware", " Collaborative design & iteration workflows"],
@@ -29,7 +29,7 @@ export default function CodePage() {
       // title: "🤖 Prompt & Prototype",
       title: "Prompt & Prototype",
       duration: "4 weeks",
-      level: "Beginner",
+      // level: "Beginner",
       // price: "Coming Soon",
       image: "https://res.cloudinary.com/duoa4uzr3/image/upload/v1752814483/WhatsApp_Image_2025-07-18_at_10.14.31_b93dffab_n7fnta.jpg",
       features: ["AI prompt engineering (text/image)" , " No-code to low-code prototyping tools", "Generative workflows with ChatGPT, Midjourney", " Build & test AI-enhanced interactive concepts"],
@@ -166,7 +166,7 @@ Every line you write moves you closer to innovation, internships, and industry-r
       {courses.map((course, index) => (
         <div
           key={index}
-          className="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-blue-200 group animate-fade-in-up hover-glow transform hover:-translate-y-1"
+          className="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-blue-200 group animate-fade-in-up hover-glow transform hover:-translate-y-1 flex flex-col"
           style={{ animationDelay: `${index * 0.1}s` }}
         >
           <div className="relative h-48 sm:h-52 md:h-56 lg:h-60 w-full overflow-hidden">
@@ -176,40 +176,39 @@ Every line you write moves you closer to innovation, internships, and industry-r
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-700"
             />
-            <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold text-brand-teal-600 shadow">
-              {course.level}
-            </div>
           </div>
 
-          <div className="p-6 sm:p-8">
-            <h3 className="text-xl sm:text-2xl font-display font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
-              {course.title}
-            </h3>
+          <div className="p-6 sm:p-8 flex flex-col flex-1 justify-between">
+            <div>
+              <h3 className="text-xl sm:text-2xl font-display font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
+                {course.title}
+              </h3>
 
-            <div className="flex items-center justify-between mb-4 sm:mb-6">
-              <span className="text-gray-600 flex items-center bg-gray-50 px-3 py-1 rounded-lg text-sm sm:text-base">
-                <Clock className="h-4 w-4 mr-1 text-blue-600" />
-                {course.duration}
-              </span>
+              <div className="flex items-center justify-between mb-4 sm:mb-6">
+                <span className="text-gray-600 flex items-center bg-gray-50 px-3 py-1 rounded-lg text-sm sm:text-base">
+                  <Clock className="h-4 w-4 mr-1 text-blue-600" />
+                  {course.duration}
+                </span>
+              </div>
+
+              <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 text-sm sm:text-base">
+                {course.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-center text-gray-600">
+                    <CheckCircle className="h-5 w-5 mr-3 text-green-500" />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
             </div>
 
-            <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 text-sm sm:text-base">
-              {course.features.map((feature, idx) => (
-                <li key={idx} className="flex items-center text-gray-600">
-                  <CheckCircle className="h-5 w-5 mr-3 text-green-500" />
-                  {feature}
-                </li>
-              ))}
-            </ul>
-
             {course.comingSoon ? (
-              <div className="w-full bg-gray-400 text-white py-3 sm:py-4 px-4 sm:px-6 rounded-xl font-semibold text-center cursor-not-allowed text-sm sm:text-base">
+              <div className="w-full bg-gray-400 text-white py-3 sm:py-4 px-4 sm:px-6 rounded-xl font-semibold text-center cursor-not-allowed text-sm sm:text-base mt-auto">
                 Coming Soon
               </div>
             ) : (
               <Link
                 href="/contact"
-                className="w-full bg-brand-gradient text-white py-3 sm:py-4 px-4 sm:px-6 rounded-xl hover:shadow-lg transition-all duration-300 font-semibold text-center block transform hover:scale-105 shadow-lg text-sm sm:text-base"
+                className="w-full bg-brand-gradient text-white py-3 sm:py-4 px-4 sm:px-6 rounded-xl hover:shadow-lg transition-all duration-300 font-semibold text-center block transform hover:scale-105 shadow-lg text-sm sm:text-base mt-auto"
               >
                 Enroll Now
               </Link>
@@ -220,6 +219,7 @@ Every line you write moves you closer to innovation, internships, and industry-r
     </div>
   </div>
 </section>
+
 
 
       {/* Why Choose Us Section */}

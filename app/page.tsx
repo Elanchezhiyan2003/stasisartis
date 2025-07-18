@@ -390,7 +390,7 @@ export default function HomePage() {
       </section>
 
       {/* Offerings Section */}
-      <section
+      {/* <section
         id="offerings"
         className="py-12 sm:py-16 lg:py-20 xl:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white relative"
       >
@@ -444,10 +444,10 @@ export default function HomePage() {
             })}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 lg:py-20 xl:py-28 px-4 sm:px-6 lg:px-8 bg-brand-gradient relative overflow-hidden">
+      {/* <section className="py-12 sm:py-16 lg:py-20 xl:py-28 px-4 sm:px-6 lg:px-8 bg-brand-gradient relative overflow-hidden">
         <div className="absolute inset-0 bg-pattern-grid opacity-20"></div>
         <div className="absolute top-6 left-2 sm:top-10 sm:left-4 lg:left-10 w-16 h-16 sm:w-20 sm:h-20 lg:w-32 lg:h-32 bg-white/10 rounded-full animate-float"></div>
         <div className="absolute bottom-6 right-2 sm:bottom-10 sm:right-4 lg:right-10 w-12 h-12 sm:w-16 sm:h-16 lg:w-24 lg:h-24 bg-white/10 rounded-full animate-bounce-gentle"></div>
@@ -469,7 +469,72 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
+      <section
+  id="offerings"
+  className="py-12 sm:py-16 lg:py-20 xl:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white relative"
+>
+  <div className="absolute inset-0 bg-pattern-dots opacity-20"></div>
+  <div className="max-w-7xl mx-auto relative z-10">
+    <div className="text-center mb-12 sm:mb-16 lg:mb-20 animate-fade-in-up">
+      <h3 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-display font-bold text-gray-900 mb-3 sm:mb-4 lg:mb-6">
+        Our Offerings
+      </h3>
+      <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-2">
+        Explore pathways where logic meets imagination, and every creation speaks both tech and soul.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-10">
+      {offerings.map((offering, index) => {
+        const IconComponent = offering.icon;
+        return (
+          <Link
+          key={index}
+          href={`/offerings/${offering.slug}`}
+          className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-gray-100 hover:border-gray-200 animate-fade-in-up hover-glow flex flex-col h-full"
+          style={{ animationDelay: `${index * 0.1}s` }}
+        >
+          <div className="relative h-48 sm:h-56 overflow-hidden">
+            <Image
+              src={offering.image || "/placeholder.svg"}
+              alt={offering.title}
+              fill
+              className="object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+            <div
+              className={`absolute top-4 sm:top-6 left-4 sm:left-6 ${offering.color} w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg`}
+            >
+              <IconComponent className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+            </div>
+          </div>
+        
+          <div className="p-6 sm:p-8 flex flex-col justify-between flex-grow">
+            <div>
+              <h4 className="text-xl sm:text-2xl font-display font-bold text-gray-900 mb-3 group-hover:text-brand-teal-600 transition-colors duration-300">
+                {offering.title}
+              </h4>
+              <p className="text-gray-600 leading-relaxed mb-4 text-base sm:text-lg min-h-[5.5rem]">
+                {offering.description}
+              </p>
+            </div>
+        
+            <div className="flex items-center text-brand-teal-600 font-semibold group-hover:text-brand-cyan-600 transition-colors duration-300 mt-auto">
+              Learn More
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
+            </div>
+          </div>
+        </Link>
+        
+        
+        );
+      })}
+    </div>
+  </div>
+</section>
+
+
 {/* <Footer/> */}
       
     </div>
