@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/sa.jpg" ,
   },
+  verification: {
+    google: "TueB4iYNoCRt43HIfnjb0SKvJ0la_iIu8gLiVfYzEak",
+  },
     // generator: 'v0.dev'
 }
 
